@@ -1,128 +1,153 @@
 {
   "sources": [
-    { "type": "arxiv", "name": "arXiv" }
+    { "type": "arxiv", "name": "arXiv" },
+    {
+      "type": "feed",
+      "name": "Nature",
+      "url": "https://www.nature.com/nature.rss"
+    },
+    {
+      "type": "feed",
+      "name": "Nature Physics",
+      "url": "https://www.nature.com/nphys.rss"
+    },
+    {
+      "type": "feed",
+      "name": "Nature Photonics",
+      "url": "https://www.nature.com/nphoton.rss"
+    },
+    {
+      "type": "feed",
+      "name": "Science",
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=science"
+    },
+    {
+      "type": "feed",
+      "name": "Science Advances",
+      "url": "https://www.science.org/action/showFeed?type=etoc&feed=rss&jc=sciadv"
+    },
+    {
+      "type": "feed",
+      "name": "Physical Review Letters",
+      "url": "https://feeds.aps.org/rss/recent/prl.xml"
+    },
+    {
+      "type": "feed",
+      "name": "Optica",
+      "url": "https://opg.optica.org/rss/optica.xml"
+    },
+    {
+      "type": "feed",
+      "name": "Optics Express",
+      "url": "https://opg.optica.org/rss/oe.xml"
+    },
+    {
+      "type": "feed",
+      "name": "Optics Letters",
+      "url": "https://opg.optica.org/rss/ol.xml"
+    },
+    {
+      "type": "feed",
+      "name": "Photonics Research",
+      "url": "https://opg.optica.org/rss/prj.xml"
+    }
   ],
   "conference_sources": {
-    "enabled": true,
-    "current_year": 2026,
-    "lookback_years": 2,
-    "venues": [
-      {
-        "id": "isca",
-        "name": "ISCA",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/isca/isca{year}.bht"]
-      },
-      {
-        "id": "micro",
-        "name": "MICRO",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/micro/micro{year}.bht"]
-      },
-      {
-        "id": "hpca",
-        "name": "HPCA",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/hpca/hpca{year}.bht"]
-      },
-      {
-        "id": "asplos",
-        "name": "ASPLOS",
-        "group": "computer architecture",
-        "dblp_toc_patterns": [
-          "db/conf/asplos/asplos{year}-1.bht",
-          "db/conf/asplos/asplos{year}-2.bht",
-          "db/conf/asplos/asplos{year}-3.bht",
-          "db/conf/asplos/asplos{year}-4.bht"
-        ]
-      },
-      {
-        "id": "mlsys",
-        "name": "MLSys",
-        "group": "systems for machine learning",
-        "dblp_toc_patterns": ["db/conf/mlsys/mlsys{year}.bht"]
-      },
-      {
-        "id": "eurosys",
-        "name": "EuroSys",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/eurosys/eurosys{year}.bht"]
-      }
-    ]
+    "enabled": false,
+    "include_default_venues": false,
+    "venues": []
   },
   "topics": [
     {
-      "id": "llm_low_precision_quantization",
-      "name": "大模型低精度量化",
-      "description": "关注大语言模型低比特量化、混合精度、量化感知训练、后训练量化、权重量化、激活量化、KV cache 量化以及量化对推理性能和精度的影响。",
+      "id": "free_electron_optics",
+      "name": "Free-electron optics",
+      "description": "关注自由电子与光场、近场、纳米结构和时变电磁场的相互作用，包括 electron-light interaction、自由电子波包调控、PINEM、电子能量增益/损失谱和自由电子量子态工程。",
       "keywords": [
-        "large language model quantization",
-        "LLM quantization",
-        "low-bit quantization",
-        "post-training quantization",
-        "weight-only quantization",
-        "activation quantization",
-        "mixed precision",
-        "FP8",
-        "INT4",
-        "INT8",
-        "KV cache quantization"
+        "free-electron optics",
+        "electron-light interaction",
+        "free electron light interaction",
+        "free-electron wavepacket",
+        "photon-induced near-field electron microscopy",
+        "PINEM",
+        "modulation of free electrons",
+        "free-electron quantum optics",
+        "electron energy gain spectroscopy",
+        "electron energy loss spectroscopy",
+        "near-field electron microscopy",
+        "cathodoluminescence",
+        "Smith-Purcell radiation",
+        "Cherenkov radiation",
+        "Kapitz-Dirac effect"
       ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.AI", "cs.DC"]
+      "arxiv_categories": ["physics.optics", "quant-ph", "cond-mat.mes-hall", "physics.acc-ph"]
     },
     {
-      "id": "tensor_compute_unit_architecture",
-      "name": "张量计算单元结构",
-      "description": "关注 GPU/NPU/TPU 张量计算单元、矩阵乘加阵列、数据流架构、片上存储层次、低精度张量核、AI 加速器微架构和算子映射。",
+      "id": "nanophotonics_metamaterials",
+      "name": "Nanophotonics and metamaterials",
+      "description": "关注纳米光子学、超材料、超表面、光子晶体、等离激元、Mie 共振、光学 BIC、拓扑光子学和亚波长结构中的光场调控。",
       "keywords": [
-        "tensor processing unit",
-        "tensor core",
-        "matrix multiply unit",
-        "systolic array",
-        "AI accelerator architecture",
-        "NPU architecture",
-        "GPU tensor core",
-        "low precision tensor compute",
-        "dataflow architecture",
-        "on-chip memory hierarchy"
+        "nanophotonics",
+        "metamaterials",
+        "metasurface",
+        "photonic crystal",
+        "plasmonics",
+        "Mie resonance",
+        "bound states in the continuum",
+        "BIC",
+        "quasi-BIC",
+        "topological photonics",
+        "nanocavity",
+        "high-Q resonance",
+        "nonlocal metasurface",
+        "chiral nanophotonics",
+        "strong coupling"
       ],
-      "arxiv_categories": ["cs.AR", "cs.DC", "cs.LG", "cs.PF"]
+      "arxiv_categories": ["physics.optics", "cond-mat.mes-hall", "cond-mat.mtrl-sci", "quant-ph"]
     },
     {
-      "id": "llm_inference_cluster_communication",
-      "name": "大模型推理集群通信优化",
-      "description": "关注分布式大模型推理、prefill/decode 分离、张量并行、流水并行、专家并行、跨节点通信、调度、负载均衡和 serving 系统吞吐延迟优化。",
+      "id": "nonlinear_quantum_optics",
+      "name": "Nonlinear and quantum optics",
+      "description": "关注非线性光学与量子光学中的光子产生、纠缠、压缩、单光子/双光子过程、微腔非线性、集成量子光子学以及结构化光场中的量子态调控。",
       "keywords": [
-        "LLM inference serving",
-        "distributed inference",
-        "inference cluster",
-        "tensor parallelism",
-        "pipeline parallelism",
-        "expert parallelism",
-        "all-reduce",
-        "collective communication",
-        "prefill decode disaggregation",
-        "serving scheduler"
+        "nonlinear optics",
+        "quantum optics",
+        "spontaneous parametric down-conversion",
+        "SPDC",
+        "entangled photons",
+        "squeezed light",
+        "single-photon source",
+        "two-photon interference",
+        "Hong-Ou-Mandel interference",
+        "integrated quantum photonics",
+        "microresonator nonlinear optics",
+        "four-wave mixing",
+        "second-harmonic generation",
+        "optical parametric oscillator",
+        "quantum frequency conversion"
       ],
-      "arxiv_categories": ["cs.DC", "cs.PF", "cs.CL", "cs.LG"]
+      "arxiv_categories": ["quant-ph", "physics.optics"]
     },
     {
-      "id": "kvcache_compression_storage_scheduling",
-      "name": "KV cache 压缩与存储调度",
-      "description": "关注大模型推理中的 KV cache 压缩、淘汰、分页、卸载、预取、层级存储、显存管理和长上下文推理效率优化。",
+      "id": "bic_photonics",
+      "name": "Bound states in the continuum",
+      "description": "重点跟踪连续谱束缚态在光子晶体、超表面、纳米腔、非厄米系统、拓扑光子学、激光、传感、非线性增强和量子光源中的新进展。",
       "keywords": [
-        "KV cache compression",
-        "KV cache eviction",
-        "KV cache scheduling",
-        "paged attention",
-        "attention cache",
-        "long context inference",
-        "memory offloading",
-        "GPU memory management",
-        "cache prefetching",
-        "LLM serving memory"
+        "bound states in the continuum",
+        "BIC",
+        "quasi-BIC",
+        "symmetry-protected BIC",
+        "accidental BIC",
+        "Friedrich-Wintgen BIC",
+        "high-Q resonance",
+        "supercavity mode",
+        "photonic crystal slab",
+        "metasurface BIC",
+        "non-Hermitian photonics",
+        "topological BIC",
+        "BIC laser",
+        "nonlinear BIC"
       ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.DC", "cs.PF"]
+      "arxiv_categories": ["physics.optics", "cond-mat.mes-hall", "quant-ph"]
     }
   ]
 }
